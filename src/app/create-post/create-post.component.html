@@ -1,0 +1,23 @@
+
+<mat-card>
+    <mat-form-field>
+        <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="onAddPost()">add</button>
+</mat-card>
+
+
+
+
+ <p>{{newPost}}</p>
+<hr>
+<p>{{enteredValue}}</p> 
+
+
+<h1>Example of pipes</h1>
+
+<div>
+    {{user.DOB | calcage:user.DOB}}
+    <div [innerHTML]='user.firstName|sanitizer:user.firstName'></div>
+</div>
+                                      
